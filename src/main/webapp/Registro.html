@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSSLM.css">
+<script src="script/Registro.js"></script>
+</head>
+<body>
+<div class="container">
+     <div class="row">
+              <div class="col-md-7 col-sm-9 registro"><h1>Registro</h1></div>
+              <div class="col-md-3 col-sm-3"><a href="index.html"><button class="volver">Volver</button></a></div><br><br>
+      </div>
+<!-- Formulario para los registros de cosas de un usuario -->
+<form>
+  <div class="formula">
+     Nombre:
+    <input type="text" size="10" name="tuNombre" value="Tu Nombre"/><br><br>
+    
+    Apellidos:
+    <input type="text" size="30" name="tuApellidos" value="Tus Apellidos"/><br><br>
+    
+    Pregunta de recuperación:
+    <!-- Hacemos un select para dar diferentes opciones en un formulario -->
+    <select name="Pregunta">
+			<option value="animal">¿Tienes Mascota?</option>
+			<option value="nacimiento">¿Donde naciste?</option>
+			<option value="hermanos">¿Cuantos hermanos tienes?</option>
+			<option value="vivir">¿Donde vives?</option>
+	</select><br><br>
+	
+	Respuesta:
+	<input type="text" size="30" name="tuRespuesta" value="Respuesta"/><br><br>
+	
+	Gmail:
+	<input type="email" name="tuEmail" value="Gmail"/><br><br>
+	
+	Contraseña:
+	<input type="password" name="tuContraseña" value="Contraseña"/><br><br>
+	
+	Repite la contraseña:
+	<input type="password" name="tuContraseña2" value="Contraseña2"/><br><br></div>
+	<div class="guardar"><input type="button" name="guardarMensaje" value="Guardar" onclick="operacionRegistro(this.form)"></div>
+		
+</form>
+</div>
+
+
+</body>
+</html>
